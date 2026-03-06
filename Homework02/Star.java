@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 
-public class Main {
+public class Star {
     public static void main(String[] args) {
         String inp = JOptionPane.showInputDialog("Input a interger: ");
         int n;
