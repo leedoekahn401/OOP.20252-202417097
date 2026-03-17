@@ -33,6 +33,10 @@ public class BankAccount {
         return this.name;
     }
 
+    public void setName(String newName){
+        this.name = newName;
+    }
+
     public double getBalance(){
         return this.balance;
     }
