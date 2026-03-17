@@ -15,7 +15,7 @@ public class Main {
         account2.withdraw(1000000);
         account2.printBalance();
 
-        account1.transfer(account2, 30000);
+        account1.transfer(account2, 300000);
         account1.printBalance();
         account2.printBalance();
 
