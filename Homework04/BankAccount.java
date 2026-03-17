@@ -29,6 +29,7 @@ public class BankAccount {
         idMap.put(id, true);
     }
 
+    
     public String getName(){
         return this.name;
     }
@@ -41,6 +42,23 @@ public class BankAccount {
         return this.balance;
     }
 
-    
+
+    public void deposit(double amount) {
+        if (amount <= 0) {
+            throw new IllegalArgumentException("Deposit amount must be greater than 0");
+        }
+        this.balance += amount;
+    }
+
+    public void withdraw(double amount) {
+        if (amount <= 0) {
+            throw new IllegalArgumentException("Withdraw amount must be greater than 0");
+        }
+        if (balance - amount < MINIMUM_BALANCE) {
+            throw new IllegalArgumentException("Balance must not below 50000");
+        }
+        this.balance -= amount;
+    }
+
 
 }
